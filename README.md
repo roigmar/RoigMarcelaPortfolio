@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Portafolio web personal desarrollado como Trabajo Práctico Obligatorio (PFO1) para Tecnicatura de Desarrollo de Software. Incluye secciones: encabezado, sobre mí, proyectos, habilidades, contacto, películas favoritas y pie de página, utilizando HTML, CSS y Google Fonts.
+Portafolio web personal desarrollado como Trabajo Práctico Obligatorio (PFO1) para la materia Desarrollo de sistemas web - Front End para Tecnicatura de Desarrollo de Software. Incluye secciones: header con barra de navegación, sobre mí, proyectos, habilidades, contacto, películas favoritas y foter, utilizando HTML, CSS y Google Fonts.
 
 ## Checklist - Práctica Formativa Obligatoria 1
 
@@ -13,10 +13,10 @@ Portafolio web personal desarrollado como Trabajo Práctico Obligatorio (PFO1) p
 [x] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
 
 • Repositorio y Publicación:
-[ ] Repositorio en GitHub creado. (completar por el autor)
-[ ] Proyecto subido al repositorio. (completar por el autor)
-[ ] Proyecto publicado utilizando GitHub Pages. (completar por el autor)
-[ ] En el "README.md" se indica la URL de GitHub Pages. (completar por el autor)
+[x] Repositorio en GitHub creado. https://github.com/roigmar/Desarrollo-de-sistemas-web---Front-End---PFO1
+[x] Proyecto subido al repositorio. (completar por el autor)
+[x] Proyecto publicado en Vercel. (completar por el autor)
+[xgit remote set-url origin https://github.com/tu-usuario/nuevo-nombre.git] En el "README.md" se indica la URL de Vercel (completar por el autor)
 
 • Uso de Google Fonts:
 [x] Enlace a Google Fonts incluido en la sección "head" del HTML.
