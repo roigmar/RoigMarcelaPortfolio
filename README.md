@@ -13,10 +13,10 @@ Portafolio web personal desarrollado como Trabajo Práctico Obligatorio (PFO1) p
 [x] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
 
 • Repositorio y Publicación:
-[x] Repositorio en GitHub creado. https://github.com/roigmar/Desarrollo-de-sistemas-web---Front-End---PFO1
-[x] Proyecto subido al repositorio. (completar por el autor)
-[x] Proyecto publicado en Vercel. (completar por el autor)
-[xgit remote set-url origin https://github.com/tu-usuario/nuevo-nombre.git] En el "README.md" se indica la URL de Vercel (completar por el autor)
+[x] Repositorio en GitHub creado. https://github.com/roigmar/MarcelaRoigPortfolio
+[x] Proyecto subido al repositorio.
+[x] Proyecto publicado en Vercel. 
+[x] En el "README.md" se indica la URL de Vercel https://marcela-roig-portfolio.vercel.app/
 
 • Uso de Google Fonts:
 [x] Enlace a Google Fonts incluido en la sección "head" del HTML.
