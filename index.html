@@ -7,31 +7,38 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio Marcela Roig</title>
+    <link rel="stylesheet" href="css/language-selector.css">
 </head>
 
 <body>
     <!-- Sección de encabezado: nombre, rol y navegación. Mejora futura: ampliar el menú y poner una cambio de idioma a ingles. -->
     <header id="header" class="header">
+        <div class="language-selector-container">
+            <select id="languageSelector" class="language-selector">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
         <img src="img/imagenPerfil.jpg" alt="Foto de perfil de Marcela Roig" class="profile-img">
         <h1>Marcela Roig</h1>
-        <h4>Software developer junior</h4>
+        <h4 data-i18n="jobTitle">Software developer junior</h4>
         <nav class="nav">
             <ul>
-                <li><a href="#sobremi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobremi" data-i18n="navAboutMe">Sobre mí</a></li>
+                <li><a href="#proyectos" data-i18n="navProjects">Proyectos</a></li>
+                <li><a href="#experiencia" data-i18n="navExperience">Experiencia</a></li>
+                <li><a href="#educacion" data-i18n="navEducation">Educación</a></li>
+                <li><a href="#contacto" data-i18n="navContact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <!-- Sección Sobre mí: presenta el perfil profesional y el hobby personal. Mejora futura: incluir un link  para descargar CV. -->
         <section id="sobremi">
-            <h2>Sobre mí</h2>
+            <h2 data-i18n="aboutMeTitle">Sobre mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Soy desarrolladora de software en formación, actualmente estoy cursando la Tecnicatura en
+                    <p data-i18n="aboutMeP1">Soy desarrolladora de software en formación, actualmente estoy cursando la Tecnicatura en
                         Desarrollo de
                         Software (IFTS N°29). Trabajo con C#, Python y Kotlin. Tengo experiencia desarrollando
                         aplicaciones de
@@ -39,7 +46,7 @@
                         herramientas de
                         gestión de proyectos como Trello y ClickUp.</p>
 
-                    <p>Dentro de lo técnico, disfruto analizar problemas y buscar soluciones eficientes, tratando de
+                    <p data-i18n="aboutMeP2">Dentro de lo técnico, disfruto analizar problemas y buscar soluciones eficientes, tratando de
                         optimizar
                         y mejorar cada desarrollo. Me considero una persona creativa, con capacidad de trabajo en equipo
                         y con
@@ -47,7 +54,7 @@
                         rápido, adaptarme a nuevos desafíos y trabajar con compromiso, prestando
                         atención a los detalles.</p>
 
-                    <p>En mi tiempo libre practico remo, una actividad que me ayuda a mantener la constancia y la
+                    <p data-i18n="aboutMeP3">En mi tiempo libre practico remo, una actividad que me ayuda a mantener la constancia y la
                         disciplina,
                         valores que también aplico en mi forma de trabajar.</p>
                 </div>
@@ -57,14 +64,14 @@
 
         <!-- Sección Proyectos: se muestra experiencia práctica en aplicativos. Mejora futura: ampliar explicación y agregar animáción para carrousel de imágenes. -->
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 data-i18n="projectsTitle">Proyectos</h2>
             <div class="projects-grid">
                 <div class="card">
                     <img src="img/appMobile.png" alt="Imagen de la pantalla de inicio de una aplicación móvil"
                         class="card-img">
                     <div class="card-content">
-                        <h3>Mobile App</h3>
-                        <p>
+                        <h3 data-i18n="mobileAppTitle">Mobile App</h3>
+                        <p data-i18n="mobileAppDesc">
                             Aplicación desarrollada para la materia "Desarrollo de Aplicaciones Móviles". Los requisitos
                             eran: iniciar sesión en la aplicación como administrador, registrar clientes, pagar cuotas y
                             actividades, y consultar las fechas de vencimiento diarias. Se maquetó en Figma y se
@@ -77,8 +84,8 @@
                         <img src="img/desktopApp2.png" alt="Pantalla de una aplicación de escritorio" class="card-img">
                     </div>
                     <div class="card-content">
-                        <h3>Desktop App - Inglés</h3>
-                        <p>Aplicación de escritorio personalizada, diseñada para un profesor de inglés sobre la base de
+                        <h3 data-i18n="desktopAppTitle">Desktop App - Inglés</h3>
+                        <p data-i18n="desktopAppDesc">Aplicación de escritorio personalizada, diseñada para un profesor de inglés sobre la base de
                             un ejercicio. Los requerimientos del sistema fueron, por un lado, gestionar un crud para
                             categorias semánticas y dentro de ellas para palabras o frases y por el otro, generar una
                             visualización random y no repetitiva de esas palabras una vez seleccionada la categoría. La
@@ -89,10 +96,10 @@
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 data-i18n="skillsTitle">Habilidades</h2>
             <div class="skills-container">
                 <div class="skills-card hard-skills">
-                    <h3>Hard Skills</h3>
+                    <h3 data-i18n="hardSkillsTitle">Hard Skills</h3>
                     <div class="skills-list">
                         <span class="skill-tag">HTML</span>
                         <span class="skill-tag">CSS</span>
@@ -113,8 +120,8 @@
                 </div>
 
                 <div class="skills-card soft-skills">
-                    <h3>Soft Skills</h3>
-                    <div class="skills-list">
+                    <h3 data-i18n="softSkillsTitle">Soft Skills</h3>
+                    <div class="skills-list" id="softSkillsList">
                         <span class="skill-tag">Organización</span>
                         <span class="skill-tag">Responsabilidad</span>
                         <span class="skill-tag">Trabajo en equipo</span>
@@ -130,8 +137,8 @@
                 </div>
 
                 <div class="skills-card learning-skills">
-                    <h3>Deseo Aprender</h3>
-                    <div class="skills-list">
+                    <h3 data-i18n="learningSkillsTitle">Deseo Aprender</h3>
+                    <div class="skills-list" id="learningSkillsList">
                         <span class="skill-tag">React</span>
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Java</span>
@@ -143,8 +150,8 @@
                 </div>
 
                 <div class="skills-card hobbies">
-                    <h3>Hobbies</h3>
-                    <div class="skills-list">
+                    <h3 data-i18n="hobbiesTitle">Hobbies</h3>
+                    <div class="skills-list" id="hobbiesList">
                         <span class="skill-tag">Remo</span>
                         <span class="skill-tag">Natación</span>
                         <span class="skill-tag">Amigurumis</span>
@@ -155,83 +162,83 @@
         </section>
         <!-- Sección Contacto: formulario de validación básica. Mejora futura: integrar envío real y mensajes de éxito/ error. -->
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 data-i18n="contactTitle">Contacto</h2>
             <form class="contact-form" action="https://formsubmit.co/roigmar.ba@gmail.com" method="POST">
                 <div>
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre" data-i18n="contactNameLabel">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div>
-                    <label for="apellido">Apellido:</label>
+                    <label for="apellido" data-i18n="contactLastNameLabel">Apellido:</label>
                     <input type="text" id="apellido" name="apellido" required>
                 </div>
                 <div>
-                    <label for="email">Email:</label>
+                    <label for="email" data-i18n="contactEmailLabel">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div>
-                    <label for="telefono">Teléfono:</label>
+                    <label for="telefono" data-i18n="contactPhoneLabel">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" inputmode="numeric" pattern="[0-9]*">
                 </div>
                 <div>
-                    <label for="asunto">Asunto:</label>
+                    <label for="asunto" data-i18n="contactSubjectLabel">Asunto:</label>
                     <textarea id="asunto" name="asunto" rows="5" required></textarea>
                 </div>
                 <input type="hidden" name="_captcha" value="false">
                 <div class="form-message" aria-live="polite"></div>
-                <button type="submit">Enviar</button>
+                <button type="submit" data-i18n="contactSendButton">Enviar</button>
             </form>
         </section>
         <!-- Sección Experiencia Laboral: muestra el recorrido profesional y competencias adquiridas -->
         <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
+            <h2 data-i18n="experienceTitle">Experiencia Laboral</h2>
             <div class="experience-timeline">
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Desarrolladora</h3>
-                        <span class="experience-company">Nuxon</span>
-                        <span class="experience-date">2024-2025</span>
+                        <h3 data-i18n="devTitle">Desarrolladora</h3>
+                        <span class="experience-company" data-i18n="devCompany">Nuxon</span>
+                        <span class="experience-date" data-i18n="devDate">2024-2025</span>
                     </div>
-                    <p>Formé parte del equipo de desarrollo de Nuxon, colaborando en la creación y optimización de sistemas de gestión con FlutterFlow y Firestore. Me enfoqué en la estructuración del flujo del backend, la gestión de colecciones de datos y la implementación de lógicas condicionales, consultas a la base de datos y funciones personalizadas según los requerimientos del sistema.</p>
+                    <p data-i18n="devDesc">Formé parte del equipo de desarrollo de Nuxon, colaborando en la creación y optimización de sistemas de gestión con FlutterFlow y Firestore. Me enfoqué en la estructuración del flujo del backend, la gestión de colecciones de datos y la implementación de lógicas condicionales, consultas a la base de datos y funciones personalizadas según los requerimientos del sistema.</p>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Gestión de Alquiler</h3>
-                        <span class="experience-company">SDCKapital</span>
-                        <span class="experience-date">2019-2022</span>
+                        <h3 data-i18n="rentalTitle">Gestión de Alquiler</h3>
+                        <span class="experience-company" data-i18n="rentalCompany">SDCKapital</span>
+                        <span class="experience-date" data-i18n="rentalDate">2019-2022</span>
                     </div>
-                    <p>Gestionaba un alquiler temporario, recibiendo a los huéspedes, coordinando entradas y salidas, y resolviendo necesidades durante la estancia. Administraba contratos, documentación y pagos, y llevaba las liquidaciones mensuales con precisión.</p>
+                    <p data-i18n="rentalDesc">Gestionaba un alquiler temporario, recibiendo a los huéspedes, coordinando entradas y salidas, y resolviendo necesidades durante la estancia. Administraba contratos, documentación y pagos, y llevaba las liquidaciones mensuales con precisión.</p>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Responsable de Compras</h3>
-                        <span class="experience-company">Veliz & co. - Tienda de ropa</span>
-                        <span class="experience-date">2007-2018</span>
+                        <h3 data-i18n="purchaseTitle">Responsable de Compras</h3>
+                        <span class="experience-company" data-i18n="purchaseCompany">Veliz & co. - Tienda de ropa</span>
+                        <span class="experience-date" data-i18n="purchaseDate">2007-2018</span>
                     </div>
-                    <p>Trabajé durante once años como encargada de la oficina de compras. Seleccionaba nuevas colecciones para la tienda, gestionaba relaciones con proveedores, y mantenía una oferta diversa de productos. Además, administraba todas las actividades de compras. Me desvinculeé voluntariamente al nacer mi segunda hija.</p>
+                    <p data-i18n="purchaseDesc">Trabajé durante once años como encargada de la oficina de compras. Seleccionaba nuevas colecciones para la tienda, gestionaba relaciones con proveedores, y mantenía una oferta diversa de productos. Además, administraba todas las actividades de compras. Me desvinculeé voluntariamente al nacer mi segunda hija.</p>
                 </div>
             </div>
         </section>
 
         <!-- Sección Educación: formación académica y profesional -->
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 data-i18n="educationTitle">Educación</h2>
             <div class="education-timeline">
                 <div class="education-item">
                     <div class="education-header">
-                        <h3>Tecnicatura en Desarrollo de Software</h3>
-                        <span class="education-institution">IFTS N°29</span>
-                        <span class="education-date">Agosto 2024 - Presente</span>
+                        <h3 data-i18n="tecnicaturaTitle">Tecnicatura en Desarrollo de Software</h3>
+                        <span class="education-institution" data-i18n="tecnicaturaInstitution">IFTS N°29</span>
+                        <span class="education-date" data-i18n="tecnicaturaDate">Agosto 2024 - Presente</span>
                     </div>
-                    <p>Formación orientada a todas las etapas del ciclo de vida del software: análisis, diseño, programación, implementación y mantenimiento. Incluye práctica profesional con enfoque en metodologías ágiles y proyectos reales.</p>
+                    <p data-i18n="tecnicaturaDesc">Formación orientada a todas las etapas del ciclo de vida del software: análisis, diseño, programación, implementación y mantenimiento. Incluye práctica profesional con enfoque en metodologías ágiles y proyectos reales.</p>
                 </div>
                 <div class="education-item">
                     <div class="education-header">
-                        <h3>Tecnicatura Superior en Corrección de Textos</h3>
-                        <span class="education-institution">Instituto Superior de Letras Eduardo Mallea</span>
-                        <span class="education-date">2017-2019</span>
+                        <h3 data-i18n="correctionTitle">Tecnicatura Superior en Corrección de Textos</h3>
+                        <span class="education-institution" data-i18n="correctionInstitution">Instituto Superior de Letras Eduardo Mallea</span>
+                        <span class="education-date" data-i18n="correctionDate">2017-2019</span>
                     </div>
-                    <p>Formación terciaria en Corrección de Textos, con preparación para revisar y mejorar la redacción, gramática, ortografía, coherencia y estilo en distintos tipos de documentos.</p>
+                    <p data-i18n="correctionDesc">Formación terciaria en Corrección de Textos, con preparación para revisar y mejorar la redacción, gramática, ortografía, coherencia y estilo en distintos tipos de documentos.</p>
                 </div>
             </div>
         </section>
@@ -239,20 +246,24 @@
 </body>
 <footer class="site-footer">
     <div class="footer-container">
-        <h3>Seguime en redes sociales</h3>
+        <h3 data-i18n="footerFollowUs">Seguime en redes sociales</h3>
         <div class="footer-links">
             <a href="https://www.linkedin.com/in/marcela-roig-730a71173/">LinkedIn</a>
             <a href="https://github.com/roigmar">GitHub</a>
         </div>
         <div class="footer-nav">
-            <a href="#header">Ir al inicio</a>
+            <a href="#header" data-i18n="footerGoToTop">Ir al inicio</a>
         </div>
-        <p class="footer-copyright">
+        <div class="footer-repository">
+            <a href="https://github.com/roigmar/RoigMarcelaPortfolio" target="_blank" data-i18n="footerRepository">Ir al repositorio de esta página</a>
+        </div>
+        <p class="footer-copyright" data-i18n-html="footerCopyright">
             &copy; 2026 Marcela Roig. Todos los derechos reservados.
         </p>
     </div>
 </footer>
 
+<script src="js/translations.js"></script>
 <script>
     const contactForm = document.querySelector('.contact-form');
     const formMessage = document.querySelector('.form-message');
@@ -267,6 +278,7 @@
 
         const formData = new FormData(contactForm);
         const actionUrl = contactForm.getAttribute('action');
+        const currentLang = localStorage.getItem('preferredLanguage') || 'es';
 
         try {
             const response = await fetch(actionUrl, {
@@ -278,7 +290,7 @@
             });
 
             if (response.ok) {
-                formMessage.textContent = 'Mensaje enviado correctamente. ¡Gracias!';
+                formMessage.textContent = translations[currentLang].contactSuccessMessage;
                 formMessage.classList.add('success', 'visible');
                 formMessage.classList.remove('error');
                 contactForm.reset();
@@ -286,11 +298,45 @@
                 throw new Error('No fue posible enviar el mensaje. Intenta nuevamente.');
             }
         } catch (error) {
-            formMessage.textContent = 'Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo.';
+            formMessage.textContent = translations[currentLang].contactErrorMessage;
             formMessage.classList.add('error', 'visible');
             formMessage.classList.remove('success');
             console.error(error);
         }
     });
+
+    // Actualizar listas dinámicas de skills
+    function updateSkillsLists() {
+        const currentLang = localStorage.getItem('preferredLanguage') || 'es';
+        
+        const softSkillsList = document.getElementById('softSkillsList');
+        if (softSkillsList) {
+            softSkillsList.innerHTML = translations[currentLang].softSkillsList
+                .map(skill => `<span class="skill-tag">${skill}</span>`)
+                .join('');
+        }
+
+        const learningSkillsList = document.getElementById('learningSkillsList');
+        if (learningSkillsList) {
+            learningSkillsList.innerHTML = translations[currentLang].learningSkillsList
+                .map(skill => `<span class="skill-tag">${skill}</span>`)
+                .join('');
+        }
+
+        const hobbiesList = document.getElementById('hobbiesList');
+        if (hobbiesList) {
+            hobbiesList.innerHTML = translations[currentLang].hobbiesList
+                .map(hobby => `<span class="skill-tag">${hobby}</span>`)
+                .join('');
+        }
+    }
+
+    // Observar cambios de idioma
+    const observer = new MutationObserver(() => {
+        updateSkillsLists();
+    });
+
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+    updateSkillsLists();
 </script>
 </html>

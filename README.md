@@ -6,8 +6,7 @@ Este es mi **portfolio personal**, desarrollado como complemento de mi CV. Aquí
 
 ## Enlace en Vivo
 
-Puedes visualizar el portfolio en: [https://marcela-roig-portfolio.vercel.app/](https://marcela-roig-portfolio.vercel.app/)
-
+Puedes visualizar el portfolio en: 
 ## Tecnologías Utilizadas
 
 - **HTML5** - Estructura semántica

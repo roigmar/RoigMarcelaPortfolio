@@ -1,0 +1,42 @@
+.language-selector-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+}
+
+.language-selector {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.language-selector:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffed4e;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.language-selector:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #ffed4e;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.language-selector option {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ffd700;
+}
+
+.language-selector option:hover {
+    background-color: #444;
+}
