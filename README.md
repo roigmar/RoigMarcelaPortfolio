@@ -6,7 +6,7 @@ Este es mi **portfolio personal**, desarrollado como complemento de mi CV. Aquí
 
 ## Enlace en Vivo
 
-Puedes visualizar el portfolio en: 
+Puedes visualizar el portfolio en: https://roigmar.github.io/RoigMarcelaPortfolio/
 ## Tecnologías Utilizadas
 
 - **HTML5** - Estructura semántica
