@@ -4,7 +4,7 @@ Thumbs.db
 
 # Editor / IDE
 .vscode/
-
+git
 # Archivos temporales
 *.log
 *.tmp
