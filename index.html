@@ -19,6 +19,8 @@
             <ul>
                 <li><a href="#sobremi">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -88,23 +90,73 @@
 
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <table class="skills-table">
-                <tr>
-                    <th>Domino</th>
-                    <th>Deseo Aprender</th>
-                    <th>Hobbies</th>
-                </tr>
-                <tr>
-                    <td>HTML, CSS, JavaScript, Python, Kotlin, Git, Figma, Mysql, Trello</td>
-                    <td>React, Node.js, Java, ApiREST, Kubernetes</td>
-                    <td>Remo, Natación, Amigurumis, Huerta</td>
-                </tr>
-            </table>
+            <div class="skills-container">
+                <div class="skills-card hard-skills">
+                    <h3>Hard Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Firestore</span>
+                        <span class="skill-tag">Trello</span>
+                        <span class="skill-tag">ClickUp</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">FlutterFlow</span>
+                    </div>
+                </div>
+
+                <div class="skills-card soft-skills">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Organización</span>
+                        <span class="skill-tag">Responsabilidad</span>
+                        <span class="skill-tag">Trabajo en equipo</span>
+                        <span class="skill-tag">Adaptabilidad</span>
+                        <span class="skill-tag">Orientada al detalle</span>
+                        <span class="skill-tag">Análisis</span>                        
+                        <span class="skill-tag">Comunicación</span>
+                        <span class="skill-tag">Pensamiento crítico</span>
+                        <span class="skill-tag">Resolución de problemas</span>
+                        <span class="skill-tag">Constancia</span>
+                        <span class="skill-tag">Disciplina</span>
+                    </div>
+                </div>
+
+                <div class="skills-card learning-skills">
+                    <h3>Deseo Aprender</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">ApiREST</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
+                </div>
+
+                <div class="skills-card hobbies">
+                    <h3>Hobbies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Remo</span>
+                        <span class="skill-tag">Natación</span>
+                        <span class="skill-tag">Amigurumis</span>
+                        <span class="skill-tag">Huerta</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Sección Contacto: formulario de validación básica. Mejora futura: integrar envío real y mensajes de éxito/ error. -->
         <section id="contacto">
             <h2>Contacto</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/roigmar.ba@gmail.com" method="POST">
                 <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -121,55 +173,67 @@
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" inputmode="numeric" pattern="[0-9]*">
                 </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <textarea id="asunto" name="asunto" rows="5" required></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-message" aria-live="polite"></div>
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <!-- Sección Películas Favoritas: da un pantallazo de mi personalidad. Mejora futura: sustituir por material más relevante -->
-        <section id="películas">
-            <h2>Películas Favoritas</h2>
-            <div class="movies-grid">
-                <div class="movie-card">
-                    <img src="img/chihiro.jpg" alt="El viaje de Chihiro" class="movie-img">
-                    <div class="movie-content">
-                        <h3>El viaje de Chihiro</h3>
-                        <p>La historia sigue a Chihiro en un viaje por un mundo extraño lleno de
-                            seres mágicos y sucesos inexplicables.
-                            Una metáfora de la evolución personal, donde Chihiro debe aprender a adaptarse a su nuevo
-                            entorno y descubrir su fuerza interior. La película trata temas universales pero desde el
-                            subtexto, dejando cierto espacio para la interpretación del espectador. Además, su marcado
-                            realismo mágico hace que muchas veces la acción avance de forma algo más abstracta e
-                            intuitiva, un rasgo habitual en la filmografía de Miyazaki.</p>
+        <!-- Sección Experiencia Laboral: muestra el recorrido profesional y competencias adquiridas -->
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Desarrolladora</h3>
+                        <span class="experience-company">Nuxon</span>
+                        <span class="experience-date">2024-2025</span>
                     </div>
+                    <p>Formé parte del equipo de desarrollo de Nuxon, colaborando en la creación y optimización de sistemas de gestión con FlutterFlow y Firestore. Me enfoqué en la estructuración del flujo del backend, la gestión de colecciones de datos y la implementación de lógicas condicionales, consultas a la base de datos y funciones personalizadas según los requerimientos del sistema.</p>
                 </div>
-                <div class="movie-card">
-                    <img src="img/dracula.jpg" alt="Drácula" class="movie-img">
-                    <div class="movie-content">
-                        <h3>Drácula</h3>
-                        <p>Una reinterpretación del mito clásico que pone el foco en el amor como fuerza trágica y
-                            destructiva, donde Drácula no es solo un monstruo, sino una figura atravesada por la pérdida
-                            y la condena. La película trabaja temas universales como el deseo, la muerte y la dualidad
-                            entre lo humano y lo monstruoso, apoyándose mucho en lo simbólico más que en lo explícito.
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Gestión de Alquiler</h3>
+                        <span class="experience-company">SDCKapital</span>
+                        <span class="experience-date">2019-2022</span>
+                    </div>
+                    <p>Gestionaba un alquiler temporario, recibiendo a los huéspedes, coordinando entradas y salidas, y resolviendo necesidades durante la estancia. Administraba contratos, documentación y pagos, y llevaba las liquidaciones mensuales con precisión.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Responsable de Compras</h3>
+                        <span class="experience-company">Veliz & co. - Tienda de ropa</span>
+                        <span class="experience-date">2007-2018</span>
+                    </div>
+                    <p>Trabajé durante once años como encargada de la oficina de compras. Seleccionaba nuevas colecciones para la tienda, gestionaba relaciones con proveedores, y mantenía una oferta diversa de productos. Además, administraba todas las actividades de compras. Me desvinculeé voluntariamente al nacer mi segunda hija.</p>
+                </div>
+            </div>
+        </section>
 
-                            Además, su estilo visual es muy marcado, con una estética teatral y recargada que refuerza
-                            lo emocional por sobre lo realista. El uso de luces, sombras y efectos prácticos genera una
-                            atmósfera casi onírica, donde la narrativa avanza más por sensaciones que por lógica,
-                            dándole un tono intenso y por momentos hipnótico.</p>
+        <!-- Sección Educación: formación académica y profesional -->
+        <section id="educacion">
+            <h2>Educación</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Tecnicatura en Desarrollo de Software</h3>
+                        <span class="education-institution">IFTS N°29</span>
+                        <span class="education-date">Agosto 2024 - Presente</span>
                     </div>
+                    <p>Formación orientada a todas las etapas del ciclo de vida del software: análisis, diseño, programación, implementación y mantenimiento. Incluye práctica profesional con enfoque en metodologías ágiles y proyectos reales.</p>
                 </div>
-                <div class="movie-card">
-                    <img src="img/prideyprejudice.jpg" alt="Pride and Prejudice" class="movie-img">
-                    <div class="movie-content">
-                        <h3>Orgullo y Prejuicio</h3>
-                        <p>Una adaptación que pone el foco en los vínculos, el orgullo y las barreras sociales,
-                            mostrando cómo las emociones y los juicios apresurados pueden condicionar las relaciones. La
-                            película trabaja temas universales como el amor, la clase social y el crecimiento personal,
-                            desarrollándolos de forma sutil, más desde los gestos y las miradas que desde lo explícito.
-                            Además, su tono es íntimo y delicado, con una puesta en escena que acompaña lo emocional sin
-                            exagerarlo. Los paisajes, la música y los silencios construyen una atmósfera tranquila y
-                            envolvente, donde la historia avanza de forma pausada, dando espacio a que cada cambio en
-                            los personajes se sienta natural y creíble.</p>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Tecnicatura Superior en Corrección de Textos</h3>
+                        <span class="education-institution">Instituto Superior de Letras Eduardo Mallea</span>
+                        <span class="education-date">2017-2019</span>
                     </div>
+                    <p>Formación terciaria en Corrección de Textos, con preparación para revisar y mejorar la redacción, gramática, ortografía, coherencia y estilo en distintos tipos de documentos.</p>
                 </div>
+            </div>
         </section>
     </main>
 </body>
@@ -179,7 +243,6 @@
         <div class="footer-links">
             <a href="https://www.linkedin.com/in/marcela-roig-730a71173/">LinkedIn</a>
             <a href="https://github.com/roigmar">GitHub</a>
-            <a href="https://twitter.com"></a>
         </div>
         <div class="footer-nav">
             <a href="#header">Ir al inicio</a>
@@ -190,4 +253,44 @@
     </div>
 </footer>
 
+<script>
+    const contactForm = document.querySelector('.contact-form');
+    const formMessage = document.querySelector('.form-message');
+    const phoneInput = document.querySelector('#telefono');
+
+    phoneInput.addEventListener('input', () => {
+        phoneInput.value = phoneInput.value.replace(/\D/g, '');
+    });
+
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const actionUrl = contactForm.getAttribute('action');
+
+        try {
+            const response = await fetch(actionUrl, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                formMessage.textContent = 'Mensaje enviado correctamente. ¡Gracias!';
+                formMessage.classList.add('success', 'visible');
+                formMessage.classList.remove('error');
+                contactForm.reset();
+            } else {
+                throw new Error('No fue posible enviar el mensaje. Intenta nuevamente.');
+            }
+        } catch (error) {
+            formMessage.textContent = 'Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo.';
+            formMessage.classList.add('error', 'visible');
+            formMessage.classList.remove('success');
+            console.error(error);
+        }
+    });
+</script>
 </html>
