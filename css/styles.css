@@ -161,6 +161,22 @@ h4 {
     color: #fff;
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 8px;
+    color: #ffd700;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #ffed4e;
+    text-decoration: none;
+}
+
 .skills-table {
     width: 100%;
     border-collapse: collapse;

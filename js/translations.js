@@ -16,8 +16,9 @@ const translations = {
         projectsTitle: "Proyectos",
         mobileAppTitle: "Mobile App",
         mobileAppDesc: "Aplicación desarrollada para la materia \"Desarrollo de Aplicaciones Móviles\". Los requisitos eran: iniciar sesión en la aplicación como administrador, registrar clientes, pagar cuotas y actividades, y consultar las fechas de vencimiento diarias. Se maquetó en Figma y se desarrolló en Android Studio utilizando Kotlin y XML",
+        viewRepository: "Ver repositorio",
         desktopAppTitle: "Desktop App - Inglés",
-        desktopAppDesc: "Aplicación de escritorio personalizada, diseñada para un profesor de inglés sobre la base de un ejercicio. Los requerimientos del sistema fueron, por un lado, gestionar un crud para categorias semánticas y dentro de ellas para palabras o frases y por el otro, generar una visualización random y no repetitiva de esas palabras una vez seleccionada la categoría. La aplicación se desarrollo en C# con Visual Studio utilizando Windows Forms",
+        desktopAppDesc: "Aplicación de escritorio personalizada, diseñada para un profesor de inglés sobre la base de un ejercicio. Los requerimientos del sistema fueron, por un lado, gestionar un crud para categorías semánticas y dentro de ellas para palabras o frases y por el otro, generar una visualización random y no repetitiva de esas palabras una vez seleccionada la categoría. La aplicación se desarrolló en C# con Visual Studio utilizando Windows Forms",
         
         skillsTitle: "Habilidades",
         hardSkillsTitle: "Hard Skills",
@@ -25,7 +26,7 @@ const translations = {
         learningSkillsTitle: "Deseo Aprender",
         hobbiesTitle: "Hobbies",
         softSkillsList: ["Organización", "Responsabilidad", "Trabajo en equipo", "Adaptabilidad", "Orientada al detalle", "Análisis", "Comunicación", "Pensamiento crítico", "Resolución de problemas", "Constancia", "Disciplina"],
-        learningSkillsList: ["React", "Node.js", "Java", "ApiREST", "Kubernetes", "TypeScript", "GraphQL"],
+        learningSkillsList: ["React", "Node.js", "Java", "REST API", "Kubernetes", "TypeScript", "GraphQL"],
         hobbiesList: ["Remo", "Natación", "Amigurumis", "Huerta"],
         
         contactTitle: "Contacto",
@@ -87,6 +88,7 @@ const translations = {
         projectsTitle: "Projects",
         mobileAppTitle: "Mobile App",
         mobileAppDesc: "Application developed for the \"Mobile Application Development\" subject. The requirements were: log in to the application as an administrator, register customers, pay fees and activities, and check daily due dates. It was designed in Figma and developed in Android Studio using Kotlin and XML.",
+        viewRepository: "View repository",
         desktopAppTitle: "Desktop App - English",
         desktopAppDesc: "Customized desktop application designed for an English teacher based on an exercise. The system requirements were, on one hand, to manage a CRUD for semantic categories and within them for words or phrases, and on the other, to generate random and non-repetitive visualization of those words once the category is selected. The application was developed in C# with Visual Studio using Windows Forms.",
         
