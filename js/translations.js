@@ -23,10 +23,8 @@ const translations = {
         skillsTitle: "Habilidades",
         hardSkillsTitle: "Hard Skills",
         softSkillsTitle: "Soft Skills",
-        learningSkillsTitle: "Deseo Aprender",
         hobbiesTitle: "Hobbies",
         softSkillsList: ["Organización", "Responsabilidad", "Trabajo en equipo", "Adaptabilidad", "Orientada al detalle", "Análisis", "Comunicación", "Pensamiento crítico", "Resolución de problemas", "Constancia", "Disciplina"],
-        learningSkillsList: ["React", "Node.js", "Java", "REST API", "Kubernetes", "TypeScript", "GraphQL"],
         hobbiesList: ["Remo", "Natación", "Amigurumis", "Huerta"],
         
         contactTitle: "Contacto",
@@ -95,10 +93,8 @@ const translations = {
         skillsTitle: "Skills",
         hardSkillsTitle: "Hard Skills",
         softSkillsTitle: "Soft Skills",
-        learningSkillsTitle: "Want to Learn",
         hobbiesTitle: "Hobbies",
-        softSkillsList: ["Organization", "Responsibility", "Teamwork", "Adaptability", "Detail-oriented", "Analysis", "Communication", "Critical thinking", "Problem-solving", "Perseverance", "Discipline"],
-        learningSkillsList: ["React", "Node.js", "Java", "REST API", "Kubernetes", "TypeScript", "GraphQL"],
+        softSkillsList: ["Organization", "Responsibility", "Teamwork", "Adaptability", "Detail-oriented", "Analysis", "Communication", "Critical thinking", "Problem solving", "Persistence", "Discipline"],
         hobbiesList: ["Rowing", "Swimming", "Amigurumis", "Gardening"],
         
         contactTitle: "Contact",

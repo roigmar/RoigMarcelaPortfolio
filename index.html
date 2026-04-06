@@ -139,19 +139,6 @@
                     </div>
                 </div>
 
-                <div class="skills-card learning-skills">
-                    <h3 data-i18n="learningSkillsTitle">Deseo Aprender</h3>
-                    <div class="skills-list" id="learningSkillsList">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">ApiREST</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">GraphQL</span>
-                    </div>
-                </div>
-
                 <div class="skills-card hobbies">
                     <h3 data-i18n="hobbiesTitle">Hobbies</h3>
                     <div class="skills-list" id="hobbiesList">
@@ -315,13 +302,6 @@
         const softSkillsList = document.getElementById('softSkillsList');
         if (softSkillsList) {
             softSkillsList.innerHTML = translations[currentLang].softSkillsList
-                .map(skill => `<span class="skill-tag">${skill}</span>`)
-                .join('');
-        }
-
-        const learningSkillsList = document.getElementById('learningSkillsList');
-        if (learningSkillsList) {
-            learningSkillsList.innerHTML = translations[currentLang].learningSkillsList
                 .map(skill => `<span class="skill-tag">${skill}</span>`)
                 .join('');
         }
