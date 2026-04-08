@@ -19,6 +19,7 @@ const translations = {
         viewRepository: "Ver repositorio",
         desktopAppTitle: "Desktop App - Inglés",
         desktopAppDesc: "Aplicación de escritorio personalizada, diseñada para un profesor de inglés sobre la base de un ejercicio. Los requerimientos del sistema fueron, por un lado, gestionar un crud para categorías semánticas y dentro de ellas para palabras o frases y por el otro, generar una visualización random y no repetitiva de esas palabras una vez seleccionada la categoría. La aplicación se desarrolló en C# con Visual Studio utilizando Windows Forms",
+        viewDemo: "Ver demo",
         taskManagerTitle: "Task Manager",
         taskManagerDesc: "Una aplicación web de tareas construida con Flask y SQLite. Task Manager permite crear, listar, completar y eliminar tareas desde una interfaz sencilla y responsive. Principales características: registro e inicio de sesión de usuarios, creación de tareas con título, descripción y prioridad, visualización de tareas pendientes y completadas, tareas completadas se muestran al final de la lista, diseño móvil-friendly con una paleta de colores moderna.",
         
@@ -91,6 +92,7 @@ const translations = {
         viewRepository: "View repository",
         desktopAppTitle: "Desktop App - English",
         desktopAppDesc: "Customized desktop application designed for an English teacher based on an exercise. The system requirements were, on one hand, to manage a CRUD for semantic categories and within them for words or phrases, and on the other, to generate random and non-repetitive visualization of those words once the category is selected. The application was developed in C# with Visual Studio using Windows Forms.",
+        viewDemo: "View demo",
         taskManagerTitle: "Task Manager",
         taskManagerDesc: "A task management web application built with Flask and SQLite. Task Manager allows creating, listing, completing, and deleting tasks from a simple and responsive interface. Main features: user registration and login, task creation with title, description, and priority, visualization of pending and completed tasks, completed tasks are shown at the end of the list, mobile-friendly design with a modern color palette.",
         
