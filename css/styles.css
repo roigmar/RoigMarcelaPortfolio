@@ -43,24 +43,6 @@ p {
     gap: 0.5rem;
 }
 
-.language-selector-container {
-    position: fixed;
-    top: 0.75rem;
-    right: 0.75rem;
-    z-index: 998;
-}
-
-.language-selector {
-    padding: 4px 8px;
-    font-size: 0.75rem;
-    border-radius: 6px;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(6px);
-}
-
 .profile-img {
     grid-area: img;
     width: 100px;
