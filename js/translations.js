@@ -4,7 +4,7 @@ const translations = {
         navProjects: "Proyectos",
         navExperience: "Experiencia",
         navEducation: "Educación",
-        navContact: "Contacto",
+        
 
         jobTitle: "Software developer junior",
 
@@ -31,14 +31,8 @@ const translations = {
         hobbiesList: ["Remo", "Natación", "Amigurumis", "Huerta"],
 
         contactTitle: "Contacto",
-        contactNameLabel: "Nombre:",
-        contactLastNameLabel: "Apellido:",
-        contactEmailLabel: "Email:",
-        contactPhoneLabel: "Teléfono:",
-        contactSubjectLabel: "Asunto:",
-        contactSendButton: "Enviar",
-        contactSuccessMessage: "Mensaje enviado correctamente. ¡Gracias!",
-        contactErrorMessage: "Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo.",
+        contactWhatsAppText: "¿Querés ponerte en contacto? Escribime por WhatsApp.",
+        contactWhatsAppButton: "Contactar por WhatsApp",
 
         experienceTitle: "Experiencia Laboral",
         devTitle: "Desarrolladora",
@@ -77,12 +71,12 @@ const translations = {
         navProjects: "Projects",
         navExperience: "Experience",
         navEducation: "Education",
-        navContact: "Contact",
+        
 
         jobTitle: "Junior Software Developer",
 
         aboutMeTitle: "About Me",
-        aboutMeP1: "Software Developer with hands-on experience in C#, Python, Kotlin, and Android Studio. Currently completing a Technical Degree in Software Development(IFTS No. 29).",
+        aboutMeP1: "Software Developer with hands-on experience in C#, Python, Kotlin, and Android Studio. Currently completing a Technical Degree in Software Development (IFTS No. 29).",
         aboutMeP2: "I have contributed to real-world application development projects, collaborating on management systems focused on efficiency, logical structure, and scalability. My background in operations and purchasing (10+ years) gives me a unique edge: I understand business processes, deadlines, and team dynamics.",
         aboutMeP3: "Outside of coding, I compete in rowing once a month — a sport that has shaped my approach to discipline, consistency, and performing under pressure. I bring that same mindset to every project I work on.",
 
@@ -104,14 +98,8 @@ const translations = {
         hobbiesList: ["Rowing", "Swimming", "Amigurumis", "Gardening"],
 
         contactTitle: "Contact",
-        contactNameLabel: "Name:",
-        contactLastNameLabel: "Last Name:",
-        contactEmailLabel: "Email:",
-        contactPhoneLabel: "Phone:",
-        contactSubjectLabel: "Subject:",
-        contactSendButton: "Send",
-        contactSuccessMessage: "Message sent successfully. Thank you!",
-        contactErrorMessage: "An error occurred while sending the form. Please try again.",
+        contactWhatsAppText: "Want to get in touch? Message me on WhatsApp.",
+        contactWhatsAppButton: "Contact via WhatsApp",
 
         experienceTitle: "Work Experience",
         devTitle: "Developer",
@@ -151,7 +139,6 @@ function setLanguage(lang) {
     localStorage.setItem('preferredLanguage', lang);
     document.documentElement.lang = lang;
 
-    // Actualizar elementos con data-i18n
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
@@ -159,7 +146,6 @@ function setLanguage(lang) {
         }
     });
 
-    // Actualizar elementos con data-i18n-html
     document.querySelectorAll('[data-i18n-html]').forEach(element => {
         const key = element.getAttribute('data-i18n-html');
         if (translations[lang][key]) {
@@ -167,27 +153,10 @@ function setLanguage(lang) {
         }
     });
 
-    // Actualizar valores de placeholders
     document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
         const key = element.getAttribute('data-i18n-placeholder');
         if (translations[lang][key]) {
             element.placeholder = translations[lang][key];
-        }
-    });
-
-    // Actualizar labels
-    document.querySelectorAll('label[data-i18n]').forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
-    });
-
-    // Actualizar botones
-    document.querySelectorAll('button[data-i18n]').forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
         }
     });
 }
@@ -196,7 +165,6 @@ function initializeLanguage() {
     const preferredLanguage = localStorage.getItem('preferredLanguage') || 'es';
     setLanguage(preferredLanguage);
 
-    // Actualizar selector de idiomas
     document.getElementById('languageSelector').value = preferredLanguage;
     document.getElementById('languageSelector').addEventListener('change', (e) => {
         setLanguage(e.target.value);

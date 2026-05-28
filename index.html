@@ -28,7 +28,6 @@
                 <li><a href="#proyectos" data-i18n="navProjects">Proyectos</a></li>
                 <li><a href="#experiencia" data-i18n="navExperience">Experiencia</a></li>
                 <li><a href="#educacion" data-i18n="navEducation">Educación</a></li>
-                <li><a href="#contacto" data-i18n="navContact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -162,35 +161,6 @@
                 </div>
             </div>
         </section>
-        <!-- Sección Contacto: formulario de validación básica. -->
-        <section id="contacto">
-            <h2 data-i18n="contactTitle">Contacto</h2>
-            <form class="contact-form" action="https://formsubmit.co/roigmar.ba@gmail.com" method="POST">
-                <div>
-                    <label for="nombre" data-i18n="contactNameLabel">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div>
-                    <label for="apellido" data-i18n="contactLastNameLabel">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
-                </div>
-                <div>
-                    <label for="email" data-i18n="contactEmailLabel">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="telefono" data-i18n="contactPhoneLabel">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" inputmode="numeric" pattern="[0-9]*">
-                </div>
-                <div>
-                    <label for="asunto" data-i18n="contactSubjectLabel">Asunto:</label>
-                    <textarea id="asunto" name="asunto" rows="5" required></textarea>
-                </div>
-                <input type="hidden" name="_captcha" value="false">
-                <div class="form-message" aria-live="polite"></div>
-                <button type="submit" data-i18n="contactSendButton">Enviar</button>
-            </form>
-        </section>
         <!-- Sección Experiencia Laboral: muestra el recorrido profesional y competencias adquiridas -->
         <section id="experiencia">
             <h2 data-i18n="experienceTitle">Experiencia Laboral</h2>
@@ -259,6 +229,12 @@
             </div>
         </section>
     </main>
+    <a href="https://wa.me/5491140233152" target="_blank" class="whatsapp-fab" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.535 5.845L.057 23.571a.75.75 0 0 0 .921.921l5.704-1.484A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.953-1.355l-.355-.211-3.687.96.984-3.595-.232-.371A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+</a>
 </body>
 <footer class="site-footer">
     <div class="footer-container">
@@ -282,46 +258,6 @@
 
 <script src="js/translations.js"></script>
 <script>
-    const contactForm = document.querySelector('.contact-form');
-    const formMessage = document.querySelector('.form-message');
-    const phoneInput = document.querySelector('#telefono');
-
-    phoneInput.addEventListener('input', () => {
-        phoneInput.value = phoneInput.value.replace(/\D/g, '');
-    });
-
-    contactForm.addEventListener('submit', async (event) => {
-        event.preventDefault();
-
-        const formData = new FormData(contactForm);
-        const actionUrl = contactForm.getAttribute('action');
-        const currentLang = localStorage.getItem('preferredLanguage') || 'es';
-
-        try {
-            const response = await fetch(actionUrl, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                formMessage.textContent = translations[currentLang].contactSuccessMessage;
-                formMessage.classList.add('success', 'visible');
-                formMessage.classList.remove('error');
-                contactForm.reset();
-            } else {
-                throw new Error('No fue posible enviar el mensaje. Intenta nuevamente.');
-            }
-        } catch (error) {
-            formMessage.textContent = translations[currentLang].contactErrorMessage;
-            formMessage.classList.add('error', 'visible');
-            formMessage.classList.remove('success');
-            console.error(error);
-        }
-    });
-
     // Actualizar listas dinámicas de skills
     function updateSkillsLists() {
         const currentLang = localStorage.getItem('preferredLanguage') || 'es';
