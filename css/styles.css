@@ -50,6 +50,12 @@ p {
     top: 0.75rem;
     right: 0.75rem;
 }
+.language-selector {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 .profile-img {
     grid-area: img;
