@@ -14,6 +14,8 @@ const translations = {
         aboutMeP3: "Además de programar, compito en remo una vez al mes; un deporte que ha moldeado mi enfoque hacia la disciplina, la constancia y el rendimiento bajo presión. Aplico esa misma mentalidad a cada proyecto en el que trabajo.",
 
         projectsTitle: "Proyectos",
+        singlePageAppTitle: "Single Page Application - React",
+        singlePageAppDesc: "BAM GLAM es una Single Page Application desarrollada en equipo con React 19 y Vite para la materia Desarrollo de Sistemas Web Front-End (IFTS N°29). La app presenta un dashboard de integrantes, perfiles individuales generados dinámicamente con React Router y useParams, un explorador de productos con búsqueda y filtros en tiempo real, consumo de API externa con paginación, galería de imágenes con lightbox interactivo, splash screen animado y sidebar responsive con menú hamburguesa. La arquitectura separa datos (JSON/JS) de presentación mediante componentes reutilizables, sin librerías de UI externas — todo el diseño fue resuelto con CSS3 puro, variables, gradientes y animaciones.",
         mobileAppTitle: "Mobile App",
         mobileAppDesc: "Aplicación desarrollada para la materia \"Desarrollo de Aplicaciones Móviles\". Los requisitos eran: iniciar sesión en la aplicación como administrador, registrar clientes, pagar cuotas y actividades, y consultar las fechas de vencimiento diarias. Se maquetó en Figma y se desarrolló en Android Studio utilizando Kotlin y XML",
         viewRepository: "Ver repositorio",
@@ -81,6 +83,8 @@ const translations = {
         aboutMeP3: "Outside of coding, I compete in rowing once a month — a sport that has shaped my approach to discipline, consistency, and performing under pressure. I bring that same mindset to every project I work on.",
 
         projectsTitle: "Projects",
+        singlePageAppTitle: "Single Page Application - React",
+        singlePageAppDesc: "BAM GLAM is a Single Page Application built as a team project using React 19 and Vite for the Web Front-End Development course (IFTS N°29). The app features a member dashboard, dynamically rendered individual profiles using React Router and useParams, a product explorer with real-time search and filters, external API consumption with pagination, an image gallery with interactive lightbox, animated splash screen, and a responsive sidebar with hamburger menu. The architecture separates data (JSON/JS) from presentation through reusable components, with no external UI libraries — all design handled with pure CSS3, custom properties, gradients, and animations.",
         mobileAppTitle: "Mobile App",
         mobileAppDesc: "Application developed for the \"Mobile Application Development\" subject. The requirements were: log in to the application as an administrator, register customers, pay fees and activities, and check daily due dates. It was designed in Figma and developed in Android Studio using Kotlin and XML.",
         viewRepository: "View repository",
